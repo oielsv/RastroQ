@@ -1,13 +1,12 @@
 import { ReactNode } from 'react';
-import { Inter } from 'next/font/google';
+
+import { inter } from '@/lib/fonts';
 
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 import type { Metadata } from 'next';
 
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'RastroQ - Job Application Tracker',
