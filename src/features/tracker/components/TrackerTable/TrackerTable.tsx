@@ -104,7 +104,7 @@ export function TrackerTable({ applications }: TrackerTableProps) {
               </TableRow>
             ))}
           </TableHeader>
-          <TableBody className="**:data-[slot=table-cell]:first:w-8">
+          <TableBody className="[&_td:first-child]:w-8">
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow key={row.id} className="relative z-0 hover:cursor-pointer">

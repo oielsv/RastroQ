@@ -18,7 +18,7 @@ interface HeaderProps extends NavActionsProps {}
 export function Header({ actions }: HeaderProps) {
   const router = useRouter();
   const pathname = usePathname();
-  const [rootPath] = pathname.split('/').filter(Boolean);
+  const [rootPath = 'home'] = pathname.split('/').filter(Boolean);
 
   return (
     <header
